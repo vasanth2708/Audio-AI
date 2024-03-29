@@ -1,0 +1,47 @@
+{% load static %}
+<html>
+<head>
+  <title>Text AI</title>
+  <style>
+    h1 {
+      font-size: 2em;
+      font-weight: bold;
+      color: #777777;
+      text-align: center;
+    }
+    table {
+      margin: auto;
+    }
+    .dialogues {
+      margin-top: 20px;
+      text-align: center;
+    }
+    .dialogues ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    .dialogues li {
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="dialogues">
+    {% if dialogues %}
+      <h2>Text AI Analysis:</h2>
+      <ul>
+        {% for speaker, dialogues_list in dialogues.items %}
+          <li><strong>{{ speaker }}</strong>:
+              <ul>
+              {% for dialogue in dialogues_list %}
+                  <li>- {{ dialogue }}</li>
+              {% endfor %}
+              </ul>
+          </li>
+        {% endfor %}
+      </ul>
+    {% endif %}
+  </div>
+
+</body>
+</html>
