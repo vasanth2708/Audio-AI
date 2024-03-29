@@ -16,3 +16,4 @@ Execution
 Challenges Faced - I was facing issues with deepgram API. I have gone through the Deepgram documentation as well but it was not able to convert the speech to text.
 
 I've also completed the basic workflow for text analysis using the OpenAI API,My work so far has focused on uploading files and performing analysis. If necessary, I can further enhance this process.
+
