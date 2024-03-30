@@ -75,7 +75,7 @@ def openAi_Results(dialogues):
         completion =client.chat.completions.create(
         model="gpt-3.5-turbo",
         messages=[
-            {"role":"system","content":"Act as sentimental analysis"},
+            {"role":"system","content":"Tell about the speaker sentimental meaning"},
             {"role": "user", "content": f"{dialogues[v]}"}
         ]
         )
