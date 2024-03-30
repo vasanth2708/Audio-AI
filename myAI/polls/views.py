@@ -62,9 +62,6 @@ def handle_uploaded_file(uploaded_file,filename):
     for k in textS:
         textS[k] = " ".join(textS[k])
     print(textS)
-    return parse_dialogues(textS)
-
-def parse_dialogues(file_path):
     return openAi_Results(file_path)
 
 def openAi_Results(dialogues):
