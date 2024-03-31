@@ -7,7 +7,7 @@ If you already have env setup in system then
 Required Installations after env setup - 
 - pip install deepgram-sdk==2.12.0
 - pip install openai
-- pip install djangO
+- pip install django
 
 ------Before execution----------- 
 - Add the OpenAI APIkey in views.py
